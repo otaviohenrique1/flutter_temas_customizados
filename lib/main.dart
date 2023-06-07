@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_temas_customizados/themes/my_themes.dart';
 import 'screens/initial_screen.dart';
 
 void main() {
@@ -12,9 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
-      ),
+      theme: myTheme,
       home: const InitialScreen(),
     );
   }
